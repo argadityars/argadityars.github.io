@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-dark bg-dark">
       <div class="container">
         <button
           class="navbar-toggler"
@@ -43,22 +43,56 @@
       </div>
     </nav>
 
-    <section class="header-section container">
-      <picture>
-        <source media="(min-width: 768px)" srcset="./src/img/art-header.svg" />
-        <img src="./src/img/art-header-sm.svg" alt="Header art" />
-      </picture>
-      <header>
-        <h1>My name is <span class="underline">Underline</span></h1>
-        <p class="h5 font-weight-normal">
-          Lorem ipsum dolor sit amet consectetur adipisicing.
-        </p>
-      </header>
+    <section class="header-section">
+      <div class="container">
+        <picture>
+          <img src="./src/img/art-header-sm.svg" alt="Header art" />
+        </picture>
+        <header>
+          <h1>My name is <span class="underline">Underline</span></h1>
+          <p class="h5 font-weight-normal">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </p>
+        </header>
+      </div>
     </section>
 
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nemo repudiandae at, quaerat
-    excepturi architecto culpa voluptas ullam harum id alias ex assumenda asperiores sed cumque
-    veritatis corporis quisquam aut.
+    <section class="exp-section container separator">
+      <div class="row">
+        <header>
+          <h2 class="h1 title">Experience</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio consectetur.
+          </p>
+        </header>
+        <section>
+          <ul>
+            <li>
+              <h3 class="h5">Company <small>Des 2018</small></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti esse vero minima
+                totam, ducimus ullam eos soluta rerum eius quae.
+              </p>
+              <p class="hashtag">#ReactNative #jQuery #Sass</p>
+            </li>
+            <li>
+              <h3 class="h5">Company <small>Des 2018</small></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti esse vero minima
+                totam, ducimus ullam eos soluta rerum eius quae.
+              </p>
+            </li>
+            <li>
+              <h3 class="h5">Company <small>Des 2018</small></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti esse vero minima
+                totam, ducimus ullam eos soluta rerum eius quae.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
 
     <script src="./src/js/main.js"></script>
   </body>

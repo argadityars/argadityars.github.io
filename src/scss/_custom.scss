@@ -17,6 +17,12 @@ body {
   }
 }
 
+.separator {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+// Section
 .header-section {
   position: relative;
   min-height: 100vh;
@@ -37,9 +43,48 @@ body {
   }
 }
 
+.exp-section {
+  header {
+    @extend .col-md-4;
+  }
+
+  section {
+    @extend .col-md-7;
+    @extend .offset-md-1;
+    padding-top: 57px;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+
+      li {
+        margin-bottom: $spacer * 2;
+
+        p:not(:last-child) {
+          margin-bottom: $spacer/3;
+        }
+
+        .hashtag {
+          color: $theme-orange;
+        }
+      }
+
+      small {
+        color: $theme-orange;
+        float: right;
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+
 // Bootsrtap override
 .bg-dark {
   background-color: $theme-bg-dark !important;
+}
+
+.navbar {
+  padding: 0.5rem 0;
 }
 
 .navbar-dark .navbar-toggler {
@@ -58,47 +103,11 @@ body {
 // Screen
 // Small devices (landscape phones, 576px and up)
 // @include media-breakpoint-up(sm) {
-
 // }
 
 // Medium devices (tablets, 768px and up)
-@include media-breakpoint-up(md) {
-  .navbar.bg-dark {
-    background-color: $white !important;
-  }
-
-  .navbar-nav {
-    height: auto;
-    margin-left: auto;
-
-    .nav-link {
-      color: $theme-bg-dark !important;
-    }
-  }
-
-  .header-section {
-    background-color: $white;
-    color: $theme-bg-dark;
-    display: flex;
-    flex-direction: row;
-
-    header {
-      padding-top: 40vh;
-      margin-left: 5rem;
-    }
-
-    picture {
-      //   flex: 2;
-      position: relative;
-      left: 0;
-      top: 0;
-
-      img {
-        width: 30vw;
-      }
-    }
-  }
-}
+// @include media-breakpoint-up(md) {
+// }
 
 // // Large devices (desktops, 992px and up)
 // @include media-breakpoint-up(lg) {
