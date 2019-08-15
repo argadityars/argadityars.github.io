@@ -1,0 +1,111 @@
+body {
+  max-width: 100vw;
+  position: relative;
+}
+
+.underline {
+  background-image: linear-gradient(transparent 78%, $theme-orange 10%);
+}
+
+.title {
+  @extend .underline;
+  display: inline-block;
+  text-transform: lowercase;
+
+  &:after {
+    content: ".";
+  }
+}
+
+.header-section {
+  position: relative;
+  min-height: 100vh;
+  background-color: $theme-bg-dark;
+  color: #f0f8ff;
+  padding-bottom: 1rem;
+  overflow: hidden;
+
+  picture {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    z-index: 1500;
+  }
+
+  header {
+    padding-top: 60vh;
+  }
+}
+
+// Bootsrtap override
+.bg-dark {
+  background-color: $theme-bg-dark !important;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0px;
+}
+
+.navbar-nav {
+  height: 100vh;
+  justify-content: center;
+}
+
+// Screen
+// Small devices (landscape phones, 576px and up)
+// @include media-breakpoint-up(sm) {
+
+// }
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  .navbar.bg-dark {
+    background-color: $white !important;
+  }
+
+  .navbar-nav {
+    height: auto;
+    margin-left: auto;
+
+    .nav-link {
+      color: $theme-bg-dark !important;
+    }
+  }
+
+  .header-section {
+    background-color: $white;
+    color: $theme-bg-dark;
+    display: flex;
+    flex-direction: row;
+
+    header {
+      padding-top: 40vh;
+      margin-left: 5rem;
+    }
+
+    picture {
+      //   flex: 2;
+      position: relative;
+      left: 0;
+      top: 0;
+
+      img {
+        width: 30vw;
+      }
+    }
+  }
+}
+
+// // Large devices (desktops, 992px and up)
+// @include media-breakpoint-up(lg) {
+
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @include media-breakpoint-up(xl) {
+
+// }

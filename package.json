@@ -1,0 +1,23 @@
+{
+  "name": "argadityars-portfolio",
+  "version": "1.0.0",
+  "description": "Argaditya's portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Argaditya RS",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.22.9"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
