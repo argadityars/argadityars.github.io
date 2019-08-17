@@ -7,3 +7,18 @@
     }
   }
 }
+
+@mixin list-reset {
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin right-content {
+  @extend .col-md-7;
+  @extend .offset-md-1;
+  padding-top: 57px;
+}
+
+@mixin left-content {
+  @extend .col-md-4;
+}

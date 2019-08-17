@@ -46,17 +46,14 @@ body {
 
 .exp-section {
   header {
-    @extend .col-md-4;
+    @include left-content;
   }
 
   section {
-    @extend .col-md-7;
-    @extend .offset-md-1;
-    padding-top: 57px;
+    @include right-content;
 
     ul {
-      padding-left: 0;
-      list-style: none;
+      @include list-reset;
 
       li {
         margin-bottom: $spacer * 2;
@@ -87,17 +84,14 @@ body {
   background-image: linear-gradient($theme-light-blue, transparent);
 
   header:first-child {
-    @extend .col-md-4;
+    @include left-content;
   }
 
   section {
-    @extend .col-md-7;
-    @extend .offset-md-1;
-    padding-top: 57px;
+    @include right-content;
 
     ul {
-      padding-left: 0;
-      list-style: none;
+      @include list-reset;
 
       li {
         position: relative;
@@ -133,6 +127,41 @@ body {
   }
 }
 
+.tech-section {
+  background-image: linear-gradient(transparent, $theme-light-orange);
+
+  header:first-child {
+    @include left-content;
+  }
+
+  section {
+    @include right-content;
+
+    ul {
+      @include list-reset;
+    }
+  }
+
+  .horizontal-list {
+    margin-bottom: $spacer * 2;
+  }
+
+  .horizontal-list li {
+    display: inline;
+
+    &:not(:last-child) {
+      margin-right: $spacer;
+    }
+  }
+
+  .tech-img {
+    height: 38px;
+    width: auto;
+    opacity: 0.5;
+    margin-bottom: $spacer;
+  }
+}
+
 // Bootsrtap override
 .bg-dark {
   background-color: $theme-bg-dark !important;
@@ -161,8 +190,16 @@ body {
 // }
 
 // Medium devices (tablets, 768px and up)
-// @include media-breakpoint-up(md) {
-// }
+@include media-breakpoint-up(md) {
+  .header-section {
+    min-height: auto;
+  }
+
+  .header-section header {
+    padding-top: 40vh;
+    padding-bottom: 20vh;
+  }
+}
 
 // // Large devices (desktops, 992px and up)
 // @include media-breakpoint-up(lg) {
