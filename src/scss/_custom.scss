@@ -165,15 +165,20 @@ body {
 
 .footer-section {
   background-color: $theme-light-orange;
+  padding-top: 5rem;
+  padding-bottom: $spacer;
 
   header {
     @extend .mb-5;
   }
 
   .horizontal-list li a {
+    text-transform: uppercase;
+  }
+
+  a {
     @extend .font-weight-bold;
     color: $theme-bg-dark;
-    text-transform: uppercase;
 
     &:hover {
       text-decoration: none;
