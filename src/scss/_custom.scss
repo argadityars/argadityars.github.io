@@ -166,7 +166,6 @@ body {
 .footer-section {
   background-color: $theme-light-orange;
   padding-top: 5rem;
-  padding-bottom: $spacer;
 
   header {
     @extend .mb-5;
@@ -183,6 +182,17 @@ body {
     &:hover {
       text-decoration: none;
       @extend .underline;
+    }
+  }
+
+  .footer-copy {
+    @extend .p-3;
+    margin-top: 5rem;
+    background-color: $theme-bg-dark;
+    color: $white;
+
+    a {
+      color: $theme-orange;
     }
   }
 }
