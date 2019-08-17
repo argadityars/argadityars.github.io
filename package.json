@@ -14,6 +14,7 @@
   "author": "Argaditya RS",
   "license": "ISC",
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "sass": "^1.22.9"
   },
   "dependencies": {
