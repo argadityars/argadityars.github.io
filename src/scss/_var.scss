@@ -12,7 +12,7 @@ $theme-light-orange: #fffaf3;
 $navbar-dark-color: $theme-orange;
 
 @include syntax-colors(
-  $blue: linear-gradient(transparent 0%, #6192fb 50%),
-  $red: linear-gradient(transparent 0%, #f3a49d 50%),
-  $yellow: linear-gradient(transparent 0%, $theme-orange 50%)
+  $blue: linear-gradient(transparent, #6192fb),
+  $purple: linear-gradient(transparent, #b59df3),
+  $yellow: linear-gradient(transparent, $theme-orange)
 );
