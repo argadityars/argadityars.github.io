@@ -86,7 +86,7 @@ body {
 .portfolio-section {
   background-image: linear-gradient($theme-light-blue, transparent);
 
-  header {
+  header:first-child {
     @extend .col-md-4;
   }
 
@@ -99,8 +99,35 @@ body {
       padding-left: 0;
       list-style: none;
 
+      li {
+        position: relative;
+      }
+
       li.card {
         margin-bottom: 1rem;
+      }
+
+      li header {
+        color: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: $spacer * 5 $spacer * 2 $spacer * 2;
+        opacity: 0;
+        transition: ease-in 0.2s;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      li:hover {
+        header {
+          opacity: 1;
+          border-bottom-left-radius: 0.3rem !important;
+          border-bottom-right-radius: 0.3rem !important;
+        }
       }
     }
   }
