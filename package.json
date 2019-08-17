@@ -2,11 +2,12 @@
   "name": "argadityars-portfolio",
   "version": "1.0.0",
   "description": "Argaditya's portfolio site",
+  "homepage": "https://argadityars.github.io/",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "predeploy": "rm -rf dist && parcel build index.html",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -b master -d dist"
   },
   "keywords": [
     "portfolio"
