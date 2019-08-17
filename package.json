@@ -4,7 +4,8 @@
   "description": "Argaditya's portfolio site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "rm -rf dist && parcel build index.html"
   },
   "keywords": [
     "portfolio"
