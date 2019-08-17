@@ -1,0 +1,9 @@
+@mixin syntax-colors($args...) {
+  @debug keywords($args);
+
+  @each $name, $color in keywords($args) {
+    .gradient-#{$name} {
+      background-image: $color;
+    }
+  }
+}
