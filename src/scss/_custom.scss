@@ -23,6 +23,19 @@ body {
   padding-bottom: 5rem;
 }
 
+.horizontal-list {
+  @include list-reset;
+  margin-bottom: $spacer * 2;
+}
+
+.horizontal-list li {
+  display: inline;
+
+  &:not(:last-child) {
+    margin-right: $spacer;
+  }
+}
+
 // Section
 .header-section {
   position: relative;
@@ -142,23 +155,30 @@ body {
     }
   }
 
-  .horizontal-list {
-    margin-bottom: $spacer * 2;
-  }
-
-  .horizontal-list li {
-    display: inline;
-
-    &:not(:last-child) {
-      margin-right: $spacer;
-    }
-  }
-
   .tech-img {
     height: 38px;
     width: auto;
     opacity: 0.5;
     margin-bottom: $spacer;
+  }
+}
+
+.footer-section {
+  background-color: $theme-light-orange;
+
+  header {
+    @extend .mb-5;
+  }
+
+  .horizontal-list li a {
+    @extend .font-weight-bold;
+    color: $theme-bg-dark;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+      @extend .underline;
+    }
   }
 }
 
