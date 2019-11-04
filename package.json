@@ -16,13 +16,13 @@
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "sass": "^1.22.9"
+    "sass": "^1.23.3"
   },
   "dependencies": {
     "autoprefixer": "^9.6.1",
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
-    "popper.js": "^1.15.0"
+    "popper.js": "^1.16.0"
   }
 }
